@@ -6,5 +6,5 @@ ENV OVPN_DATA /etc/openvpn
 
 # Command to initialize the OpenVPN configuration
 CMD ["ovpn_run"]
-docker run -v $PWD:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp://YOUR_RENDER_SERVICE_URL
+docker run -v $PWD:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp://https://myvpn-f9v7.onrender.com
 docker run -v $PWD:/etc/openvpn --rm -it kylemanna/openvpn ovpn_initpki
